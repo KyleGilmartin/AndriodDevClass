@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_backgroud_dark"
+    tools:context=".MainActivity">
+
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/ttProgress_circular"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:cpb_background_progressbar_color="#F2F2F2"
+        app:cpb_background_progressbar_width="20dp"
+        app:cpb_progress_max="10000"
+        app:cpb_progressbar_color="#F44336"
+        app:cpb_progressbar_width="15dp"
+        app:cpb_round_border="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173" />
+
+
+    <TextView
+        android:id="@+id/tvStep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:onClick="ShortClick"
+        android:text="0"
+        android:textColor="@android:color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="@+id/ttProgress_circular"
+        app:layout_constraintStart_toStartOf="@+id/ttProgress_circular"
+        app:layout_constraintTop_toTopOf="@+id/ttProgress_circular"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <Button
+        android:id="@+id/btRun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stats"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toEndOf="@+id/btReset"
+        app:layout_constraintTop_toBottomOf="@+id/btStop"
+        app:layout_constraintVertical_bias="0.257" />
+
+    <Button
+        android:id="@+id/btReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btStart"
+        app:layout_constraintVertical_bias="0.257" />
+
+    <Button
+        android:id="@+id/btStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toEndOf="@+id/btStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <ImageButton
+        android:id="@+id/btSettings"
+        android:layout_width="69dp"
+        android:layout_height="54dp"
+        android:background="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007"
+        app:srcCompat="@drawable/ic_settings2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
