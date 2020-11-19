@@ -20,11 +20,36 @@
         app:cpb_round_border="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.173" />
+        app:layout_constraintVertical_bias="0.175" />
 
+    <Chronometer
+        android:id="@+id/chronometerT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432" />
+
+    <TextView
+        android:id="@+id/tvOutOff"
+        android:layout_width="116dp"
+        android:layout_height="62dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ttProgress_circular"
+        app:layout_constraintEnd_toEndOf="@+id/ttProgress_circular"
+        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintStart_toStartOf="@+id/ttProgress_circular"
+        app:layout_constraintTop_toTopOf="@+id/ttProgress_circular"
+        app:layout_constraintVertical_bias="0.485" />
 
     <TextView
         android:id="@+id/tvStep"
@@ -40,17 +65,6 @@
         app:layout_constraintTop_toTopOf="@+id/ttProgress_circular"
         tools:ignore="OnClick" />
 
-    <Chronometer
-        android:id="@+id/chronometerT"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.432" />
-
     <Button
         android:id="@+id/btStart"
         android:layout_width="127dp"
@@ -64,19 +78,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.683" />
-
-    <Button
-        android:id="@+id/btRun"
-        android:layout_width="127dp"
-        android:layout_height="46dp"
-        android:text="Stats"
-        android:background="@drawable/btorangeroundedcorners"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toEndOf="@+id/btReset"
-        app:layout_constraintTop_toBottomOf="@+id/btStop"
-        app:layout_constraintVertical_bias="0.257" />
 
     <Button
         android:id="@+id/btReset"
@@ -96,15 +97,28 @@
         android:id="@+id/btStop"
         android:layout_width="127dp"
         android:layout_height="46dp"
+        android:background="@drawable/btredroundedcorners"
         android:onClick="doStop"
         android:text="Stop"
-        android:background="@drawable/btredroundedcorners"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.683"
         app:layout_constraintStart_toEndOf="@+id/btStart"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.685" />
+        app:layout_constraintVertical_bias="0.684" />
+
+    <Button
+        android:id="@+id/btRun"
+        android:layout_width="127dp"
+        android:layout_height="46dp"
+        android:background="@drawable/btorangeroundedcorners"
+        android:text="Stats"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.683"
+        app:layout_constraintStart_toEndOf="@+id/btReset"
+        app:layout_constraintTop_toBottomOf="@+id/btStop"
+        app:layout_constraintVertical_bias="0.26" />
 
     <ImageButton
         android:id="@+id/btSettings1"
@@ -118,19 +132,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.007"
         app:srcCompat="@drawable/ic_settings2" />
-
-    <TextView
-        android:id="@+id/tvOutOff"
-        android:layout_width="116dp"
-        android:layout_height="62dp"
-        android:text="TextView"
-        android:textColor="#000000"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/ttProgress_circular"
-        app:layout_constraintEnd_toEndOf="@+id/ttProgress_circular"
-        app:layout_constraintHorizontal_bias="0.821"
-        app:layout_constraintStart_toStartOf="@+id/ttProgress_circular"
-        app:layout_constraintTop_toTopOf="@+id/ttProgress_circular"
-        app:layout_constraintVertical_bias="0.492" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
